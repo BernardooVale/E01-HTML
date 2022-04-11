@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+
+<html lang = "pt-br">
+
+<head>
+
+<title> tutorial_c </title>
+
+</head>
+
+    <body>
+
+    <h1> Estruturas de Repetição e Suas Utilidades  </h1>
+
+    <h2> 
+    
+        <div><br>
+
+    <p>Estruturas de repetição em C são utilizadas a todo momento e serão extremamente úteis para resolver diversos problemas, além de serem uma salvação para você.
+    As estruturas de repetição que temos são: </p>
+
+        <ul type = "disc">
+
+            <li> while</li>
+            <li> do while</li>
+            <li> for</li>
+
+
+        </ul>
+
+        </div>
+
+    </h2>
+
+    <h2>
+
+        <div><br>
+
+        <p>
+            
+            Agora, quando utilizamos estruturas de repetição? Basicamente, assim como o nome diz, estruturas de repetição são usadas quando você quer repetir uma parte do código várias vezes para perder menos tempo e encurtar o código ou quando você não sabe quantas vezes está parte será utilizada, como, por exemplo contar até 30 ou contar quantos alunos entraram na sala, assim como você não quer escrever 30 vezes "printf", você também não sabe quantos alunos vão entrar. 
+        
+        </p>
+
+        </div>
+        <div>
+
+        <p>
+
+            Vamos para a parte prática, como nós fazemos ambos os exemplos com cada uma das estruturas, while, do while e for.
+
+        </p>
+        </div>
+
+    </h2>
+
+    <br><h2> Exemplos:
+
+        <div><br>
+        <p> While </p>
+            </div>
+
+            <div>
+        <p> No while você precisará de uma variável e uma condição que serão colocadas entre parênteses e após essse parênteses abre-se chaves, que é onde as funções serão escritas:</p>
+                </div>
+
+            <div>
+
+                <code>
+                    <pre>
+                        
+                        int i;
+
+                        i = 0;
+
+                        while (i <= 30){
+
+                            i++;
+
+                            printf("%d", i);
+
+                        }
+
+                    </pre>
+                </code>
+
+            </div>
+
+            <div>
+
+                <code>
+                    <pre>
+                        int i,aluno_entrando;
+
+                        i = 0;
+                        aluno_entrando = 1;
+
+                        while (i <= 30){
+
+                            if(aluno_entrando == 1){
+
+                                i++;
+
+                            }
+
+                            printf("Alunos dentro da sala %d", i);
+
+                        }
+
+                    </pre>
+                </code>
+
+            </div>
+
+            <div>
+
+                <p> Do while</p>
+
+            </div>
+            <div>
+
+                <p> O do while é praticamente igual ao while, a diferença é que você roda o código antes de testar a condição. </p>
+
+            </div>
+
+            <div>
+
+                <code>
+                    <pre>
+                        
+                        int i;
+
+                        i = 0;
+
+                        do{
+
+                            i++;
+
+                            printf("%d", i);
+
+                            
+
+                        } while(i <= 30)
+
+                    </pre>
+                </code>
+
+            </div>
+
+            <div>
+
+                <code>
+                    <pre>
+                        
+                        int i,aluno_entrando;
+
+                        i = 0;
+                        aluno_entrando = 1;
+
+                        do{
+
+                            if(aluno_entrando == 1){
+
+                                i++;
+
+                            }
+
+                            printf("Alunos dentro da sala %d", i);
+
+                        } while (i <= 30)
+
+                    </pre>
+                </code>
+
+            </div>
+
+            <div>
+
+                <p> For</p>
+
+            </div>
+
+            <div>
+
+                <p> O for é realmente bastante útil, principalmente por dois fatores, além do fato dele ser enxuto e rápido, normalmente nos códigos vocês usarão uma variável de parâmetro (nesse caso, estou utilizando "i"), e nem sempre lembramos de zera-la antes de utiliza-la novamente e por isso a contrução do for é muito boa, porque dentro do parêntese, você declara o valor, a condição e a variação do valor, deixando tudo mais rápido.</p>
+
+            </div>
+
+            <div>
+
+                <code>
+                    <pre>
+                        
+                        int i;
+
+                        for(i = 0; i <= 30; i++){
+
+                            printf("%d", i);
+
+                        }
+
+                    </pre>
+                </code>
+
+            </div>
+
+            <div>
+
+                <code>
+                    <pre>
+                        
+                        int i,aluno_entrando;
+
+                        i = 0;
+                        aluno_entrando = 1;
+
+                        for(i = 0; i <= 30; i++){
+
+                            if(aluno_entrando == 1){
+
+                                i++;
+
+                            }
+
+                            printf("Alunos dentro da sala %d", i);
+
+                        }
+
+                    </pre>
+                </code>
+
+            </div>
+
+    </h2>
+
+    </body>
+
+    </html>

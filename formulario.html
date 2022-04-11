@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+
+<html lang = "pt-br">
+
+<head>
+
+<title> Formulário de Cadastro </title>
+
+</head>
+
+    <body>
+
+        <h1>Formulário de Cadastro</h1>
+
+        <fieldset>
+            <legend><h2>Dados Pessoais</h2></legend>
+
+            <label for="codigo">Codigo:</label>
+                <input type="text" id="codigo" requiredminlength="1" maxlength="10"><br><br>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" requiredminlength="2" maxlength="20"><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" requiredminlength="4" maxlength="20"><br><br>
+
+            <label for="genero_id">Gênero:</label>
+            <input list="generos" id="genero_id" name="genero_id"></input>
+            <datalist id="generos">
+                <option value="Masculino">
+                <option value="Feminino">
+                <option value="Outro"> 
+            </datalist><br><br>
+
+            <label for="idade">Idade:</label>
+            <input min="0" type="number" id="idade" requiredminlength="1" maxlength="3"><br><br>
+
+            <label for="cartao_id">Cartão de credito:</label>
+            <input list="cartoes" id="cartao_id" name="cartao_id"></input>
+            <datalist id="cartoes">
+                <option value="Visa">
+                <option value="Master Card">
+                <option value="American Express">
+                <option value="Outro">
+            </datalist>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Dados Profissionais</h2></legend>
+            
+            <label for="job-id">Cargo:</label>
+            <input list="jobs" id="job-id" name="job-id"></input>
+            <datalist id="jobs">
+                <option value="Analista Júnior">
+                <option value="Analista Pleno">
+                <option value="Anlista Sênior">
+            </datalist><br><br>
+
+            <label>Dados Pessoais:</label><br>
+
+            <div>
+                <input type="checkbox" id="fumante" name="fumante">
+                <label for="fumante">Fumante</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Ativo_Fisicamente" name="Ativo_Fisicamente">
+                <label for="Ativo_Fisicamente">Pratica Exercícios Físicos</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Bebado" name="Bebado">
+                <label for="Bebado">Consome Bebida Álcoolica</label>
+            </div><br>
+
+            <label for="experiencia_profissional">Exeperiências Profissionais:</label><br>
+            <textarea id="experiencia_profissional" placeholder="Data inicio/Data fim/Empresa/Cargo"></textarea>
+
+        </fieldset>
+
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar" onclick="alert('Os dados foram enviados com sucesso!')">
+
+    </body>
+
+    </html>
